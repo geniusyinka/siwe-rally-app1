@@ -68,7 +68,7 @@ const Verify2 = ({}) => {
 
   return (
     // <SafeAreaView>
-    <>
+    <View style={styles.body}>
       <ScrollView>
         <View style={styles.centerView}>
           <Text
@@ -159,7 +159,7 @@ const Verify2 = ({}) => {
 
         {/* </KeyboardAvoidingView> */}
       </ScrollView>
-    </>
+    </View>
     // </SafeAreaView>
   );
 };

@@ -52,7 +52,7 @@ const Create = ({}) => {
   const truncatedAddress = address ? address.slice(0, 25) : "";
 
   return (
-    <>
+    <View style={styles.body}>
       <ScrollView>
         <View style={styles.centerView}>
           <Text style={styles.header}>
@@ -124,7 +124,7 @@ const Create = ({}) => {
           <InputBox placeholder="Signature" value={data} editable={false} />
         </View>
       </ScrollView>
-    </>
+    </View>
   );
 };
 

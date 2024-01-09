@@ -84,8 +84,7 @@ export default function App() {
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    // paddingTop: StatusBar.currentHeight,
+    backgroundColor: "rgba(247, 247, 247, 1)",
     paddingTop: 30,
   },
   scrollView: {
@@ -96,6 +95,16 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+
+  },
+  body: {
+    backgroundColor: 'white',
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    borderTopLeftRadius: 36,
+    borderTopRightRadius: 36,
+    marginTop: 10,
+    height: '100%'
   },
   header: {
     fontSize: 24,
@@ -146,9 +155,9 @@ export const styles = StyleSheet.create({
     lineHeight: 48, // Adjust as needed
   },
   title: {
-    flexDirection: "row", // Arrange items horizontally
-    alignItems: "center", // Align items vertically
-    marginLeft: 16, // Adjust margin as needed
+    flexDirection: "row", 
+    alignItems: "center", 
+    marginLeft: 16, 
   },
   titleText: {
     marginLeft: 8, // Adjust margin between icon and text

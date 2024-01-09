@@ -108,7 +108,7 @@ const Verify = () => {
   // }
 
   return (
-    <>
+    <View style={{backgroundColor: 'red'}}>
       <View style={styles.centerView}>
         <Text style={styles.header}>Verify Message</Text>
         {!address ? (
@@ -197,7 +197,7 @@ const Verify = () => {
         )}
         {/* {verificationResult === null && <Text>Verifying message...</Text>} */}
       </View>
-    </>
+    </View>
   );
 };
 
