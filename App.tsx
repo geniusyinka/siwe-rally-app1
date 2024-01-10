@@ -25,7 +25,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
 import Create from "./components/Create";
-import Verify2 from "./components/Verify2";
+import Verify2 from "./components/Verify";
 import { useKeyboard } from "@react-native-community/hooks";
 import { W3mButton } from "@web3modal/wagmi-react-native";
 import { DataProvider, useDataContext } from "./context/DataContext";
@@ -33,7 +33,7 @@ import Toast from 'react-native-toast-message'
 
 
 // 1. Get projectId at https://cloud.walletconnect.com
-const projectId = "8c3f5fe8d46b67e7ae566ed05ab15826";
+const projectId = "";
 
 // 2. Create config
 const metadata = {
@@ -68,10 +68,6 @@ export default function App() {
           <NavigationContainer>
             <View style={styles.container}>
               <Navigation />
-              {/* <Create/>
-            <Verify2/> */}
-              {/* <W3mButton/> */}
-              {/* <ConnectView/> */}
             </View>
           </NavigationContainer>
           <Toast />
@@ -88,7 +84,6 @@ export const styles = StyleSheet.create({
     paddingTop: 30,
   },
   scrollView: {
-    // backgroundColor: "pink",
     marginHorizontal: 5,
   },
   centerView: {

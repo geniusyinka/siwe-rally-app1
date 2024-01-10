@@ -1,18 +1,10 @@
-// Navigation.js
 import Create from "./Create";
-// import Verify from "./Verify";
-import { NavigationContainer } from "@react-navigation/native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import {
   View,
   Text,
   StyleSheet,
-  Button,
   Pressable,
-  TextInput,
-  SafeAreaView,
-  ViewStyle,
   TouchableOpacity,
   Animated,
   Dimensions,
@@ -24,7 +16,6 @@ import { Entypo, EvilIcons } from "@expo/vector-icons";
 import InputBox from "./utils/InputBox";
 import { styles } from "../App";
 import Verify from "./Verify";
-import Verify2 from "./Verify2";
 import { FontAwesome } from "@expo/vector-icons";
 
 // const Tab = createBottomTabNavigator();
@@ -149,7 +140,6 @@ function House() {
 const screenOptions = ({ route }) => ({
   tabBarShowLabel: true,
   tabBarLabelStyle: {
-    // backgroundColor: route.state && route.state.index === route.key ? 'blue' : 'transparent',
   },
   headerShown: false,
   fontSize: 30,
@@ -164,9 +154,6 @@ const screenOptions = ({ route }) => ({
     color: "red",
     elevation: 0,
     height: 100,
-    // backgroundColor:
-    //   route.state && route.state.index === route.key ? "blue" : "red",
-    // // fontSize: 30,
   },
 });
 
@@ -182,7 +169,7 @@ const Navigation = () => {
       />
       <Tab.Screen
         name="Verify"
-        component={Verify2}
+        component={Verify}
         options={{ tabBarLabel: '✅ Verify' }}
       />
     </Tab.Navigator>
@@ -200,7 +187,6 @@ const CustomTabBar = ({ state, descriptors, navigation, position }) => {
       {state.routes.map((route, index) => {
         const isFocused = state.index === index;
         const tabBarStyle = {
-          // backgroundColor: isFocused ? 'white' : 'lightgrey',
           borderRadius: 12,
           zIndex: 1,
           flex: 1,
@@ -240,7 +226,6 @@ const istyles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    // paddingVertical: 12,
     borderRadius: 12,
     marginHorizontal: 8,
     padding: 20,
